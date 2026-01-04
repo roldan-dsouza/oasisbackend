@@ -1,8 +1,6 @@
 import users from "./model/users.mjs";
-import {
-  addReservationHolderQuery,
-  addReservation,
-} from "./queries/reservationHolder.mjs";
+import { addReservationHolderQuery,addReservation } from "./queries/reservationHolder.mjs";
+
 
 const User = users;
 export const addDummyUser = async (req, res, next) => {

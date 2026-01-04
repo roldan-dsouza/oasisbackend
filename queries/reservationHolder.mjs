@@ -1,5 +1,8 @@
 import reservationHolder from "../model/reservationHolder.mjs";
 import reservation from "../model/reservation.mjs";
+
+
+
 export const addReservationHolderQuery = async (reservationHolderData) => {
   const { reserver_name, reserver_phoneNumber, reserver_email, user_id } =
     reservationHolderData;
@@ -74,3 +77,7 @@ export const deleteReservationById = async (id) => {
     return { message: "Error deleting reservation" };
   }
 };
+
+const killMyself = () => {
+  console.log("I am killing myself");
+}

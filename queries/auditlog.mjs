@@ -4,7 +4,7 @@ const auditLogMiddleware = async (data) => {
   try {
     const { reservation_id, action, performed_by } = data;
     const timestamp = new Date();
-
+    
     if (user_id) {
       req.auditLog = async () => {
         const newAuditLog = new audit_log({
