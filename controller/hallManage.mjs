@@ -1,7 +1,8 @@
-import { addHall } from "../queries/hallQuery.mjs";
-import { deleteHall } from "../queries/hallQuery.mjs";
-import { updateHall } from "../queries/hallQuery.mjs";
-
+import {
+  addHall,
+  deleteHall,
+  updateHall,
+} from "../services/queries/hallQuery.mjs";
 export const addHallCtrl = async (req, res) => {
   const hallData = req.body;
   try {
